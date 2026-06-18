@@ -4,7 +4,7 @@ Closed-loop field-oriented control (FOC) of a PMSM/BLDC motor on an STM32 — bu
 
 ## Goal
 
-A portfolio-grade demonstration of model-based motor control: a digitally controlled motor drive where the control loop is designed in simulation, implemented in embedded C, and validated against the model on real hardware. Built as the centerpiece of a move into a remote, model-based motor-control / power-electronics controls role.
+A portfolio-grade demonstration of model-based motor control: a digitally controlled motor drive where the control loop is designed in simulation, implemented in embedded C, and validated against the model on real hardware — the complete model → code → hardware story in one project.
 
 ## Approach
 
