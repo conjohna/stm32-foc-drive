@@ -43,7 +43,7 @@ A 9-month build (~10 hrs/week), in overlapping phases:
 
 ## Status
 
-Phase 0 — foundations. Toolchain (WSL2 + gcc/gdb, VS Code) up; repo scaffolded.
+**Phase 0 — foundations & setup (in progress).** Dev environment complete: WSL2 + Ubuntu, gcc/gdb/make toolchain, VS Code with a working debugger. Working through embedded C at the memory level — pointers and pointer arithmetic, array/pointer duality and array decay, `const` correctness (pointer vs. pointee), fixed-width integer types, and single- and multi-bit register-field manipulation — each with debugger-verified exercises committed. Currently drilling Git workflow discipline (branching, recovery, PR flow).
 
 ---
 
