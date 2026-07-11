@@ -15,12 +15,14 @@ A portfolio-grade demonstration of model-based motor control: a digitally contro
 
 ## Target hardware
 
-*Board decision: TBD — evaluating two paths.*
+- **Controller:** NUCLEO-G474RE — STM32G474 (Cortex-M4F @ 170 MHz, CORDIC, HRTIM, multiple ADCs)
+- **Power stage:** X-NUCLEO-IHM08M1 — 3-phase inverter, 8–48 V, 15 A RMS, 3-shunt current sensing, Hall/encoder input
+- **Motor:** low-voltage PMSM with sinusoidal back-EMF and position feedback *(selection in progress)*
+- **Bench:** current-limited DC supply, 16-channel logic analyzer, oscilloscope
 
-- **Option A (modular):** NUCLEO-G474RE + X-NUCLEO-IHM08M1 power stage — more probing access and headroom.
-- **Option B (integrated):** B-G431B-ESC1 all-in-one FOC ESC — lower cost, faster to first spin.
-- Motor: low-voltage 3-phase PMSM/BLDC with encoder or hall sensors.
-- Bench: current-limited DC supply, logic analyzer, oscilloscope.
+**Design decisions:**
+
+*Modular Nucleo + shield over an integrated ESC.* The integrated option is cheaper and faster to first spin, but the power stage is harder to probe independently. Since hardware bring-up and debugging are required, probing access is worth the extra wiring risk.
 
 ## Repository structure
 
