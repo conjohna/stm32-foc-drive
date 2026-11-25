@@ -26,7 +26,7 @@ A portfolio-grade demonstration of model-based motor control: a digitally contro
 
 ## Repository structure
 
-- `src/` — firmware source
+- `firmware/` — STM32 firmware (STM32CubeMX + CMake project)
 - `sim/` — Python and Simulink models
 - `docs/` — technical writeup and design notes
 - `journal/` — chronological build log
@@ -45,7 +45,7 @@ A 9-month build (~10 hrs/week), in overlapping phases:
 
 ## Status
 
-**Phase 0 — foundations & setup (in progress).** Dev environment complete: WSL2 + Ubuntu, gcc/gdb/make toolchain, VS Code with a working debugger. Working through embedded C at the memory level — pointers and pointer arithmetic, array/pointer duality and array decay, `const` correctness (pointer vs. pointee), fixed-width integer types, and single- and multi-bit register-field manipulation — each with debugger-verified exercises committed. Currently drilling Git workflow discipline (branching, recovery, PR flow).
+**Phase 0 — foundations & setup (in progress).** Dev environment: WSL2 + Ubuntu with gcc/gdb/make for host-side C and tests, plus a Windows-native STM32 toolchain (STM32CubeIDE for VS Code, STM32CubeMX, GNU Arm GCC) for firmware; first blink build in progress. Working through embedded C at the memory level — pointers and pointer arithmetic, array/pointer duality and array decay, `const` correctness (pointer vs. pointee), fixed-width integer types, and single- and multi-bit register-field manipulation — each with debugger-verified exercises committed. Currently drilling Git workflow discipline (branching, recovery, PR flow).
 
 ---
 
